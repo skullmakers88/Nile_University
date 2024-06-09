@@ -1,0 +1,176 @@
+/**************************************************************selector***************************************************************/
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3.5rem;
+  line-height: 1.5;
+  font-weight: 900;
+}
+h2 {
+  font-family: "Montserrat";
+  font-size: 3rem;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+h3 {
+  font-family: Montserrat;
+  font-weight: bold;
+}
+p {
+  color: #8f8f8f;
+}
+
+/**************************************************************ID********************************************************************/
+
+#title {
+  background: linear-gradient(rgba(21, 21, 37, 0.68), rgba(21, 21, 37, 0.68)) repeat scroll 0% 0% / auto padding-box border-box, rgba(0, 0, 0, 0) url('https://images.unsplash.com/photo-1617839625591-e5a789593135?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MTUzNXwwfDF8c2VhcmNofDF8fFF1YW50dW0lMjBjb21wdXRpbmd8ZW58MHx8fHwxNzE3NzY0NzU5fDA&ixlib=rb-4.0.3&q=80&w=1080') no-repeat scroll 50% 50% / cover padding-box border-box;
+    flex-direction: column;
+    padding: 66px 0px 8%;
+    word-break: break-word;
+    display: flex;
+    overflow: hidden;
+}
+
+#title h1 {
+  color: white; /* Add this line */
+  text-align: center;
+}
+
+
+#features {
+  padding: 7% 15%;
+  background-color: #fff;
+  z-index: 1;
+  position: relative;
+}
+#testimonials {
+  text-align: center;
+  background-color: #ef8172;
+  color: #fff;
+}
+#press {
+  background-color: #ef8172;
+  text-align: center;
+  padding-bottom: 3%;
+}
+#pricing {
+  padding: 100px;
+  text-align: center;
+}
+#cta {
+  background-color: #ff4c68;
+  color: #fff;
+  padding: 7% 15%;
+  text-align: center;
+}
+#footer {
+  background-color: #fff;
+  padding: 7% 15%;
+  text-align: center;
+}
+#Navbar{
+background-color: rgb(21, 21, 37);
+padding-bottom: 0px;
+
+}
+#Logo1{
+width: 10%;
+height: auto;
+margin-left: 4%;
+}
+#Headerd{
+color: white;
+
+}
+
+/**************************************************************Class******************************************************************/
+
+
+.container-fluid {
+  padding: 3% 15% 7%;
+}
+.navbar-brand {
+  font-family: Ubuntu;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.navbar {
+  padding-bottom: .5rem;
+}
+.nav-item {
+  padding: 0 18px;
+}
+.nav-link {
+  font-family: "Montserrat";
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+.Download-botton {
+  margin: 5% 3% 5% 0;
+}
+.image {
+  width: 17%;
+  transform: rotate(25deg);
+  position: absolute;
+  right: 27%;
+  
+    
+}
+.feature-box {
+  text-align: center;
+  padding: 5%;
+}
+.icon {
+  color: #ef8172;
+  margin-bottom: 20px;
+}
+.icon:hover {
+  color: #ff4c68;
+}
+.testimonial-image {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+.press-logo {
+  width: 15%;
+  margin: 50px 20px 50px;
+}
+.carousel-item {
+  padding: 7% 15%;
+}
+.pricing-col {
+  padding: 3% 2%;
+}
+.header {
+  font-weight: bold;
+}
+.title {
+  font-size: 3rem;
+  font-weight: 400;
+}
+.cta-hedding {
+  font-family: "Montserrat";
+  font-size: 3rem;
+  margin: 5% 3% 5% 0;
+}
+.soical-icon {
+  margin: 20px 10px;
+}
+
+/************************ media quary *******************/
+@media (max-width: 1028px) {
+  #title {
+    text-align: center;
+  }
+  .image {
+    position: static;
+    transform: rotate(0);
+    width: 30%;
+  }
+}
+
