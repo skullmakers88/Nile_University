@@ -21,30 +21,30 @@ h3 {
   font-weight: bold;
 }
 p {
-  color: #8f8f8f;
+  color: white;
 }
 
 /**************************************************************ID********************************************************************/
 
 #title {
   background: linear-gradient(rgba(21, 21, 37, 0.68), rgba(21, 21, 37, 0.68)) repeat scroll 0% 0% / auto padding-box border-box, rgba(0, 0, 0, 0) url('https://images.unsplash.com/photo-1617839625591-e5a789593135?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MTUzNXwwfDF8c2VhcmNofDF8fFF1YW50dW0lMjBjb21wdXRpbmd8ZW58MHx8fHwxNzE3NzY0NzU5fDA&ixlib=rb-4.0.3&q=80&w=1080') no-repeat scroll 50% 50% / cover padding-box border-box;
-    flex-direction: column;
-    padding: 66px 0px 8%;
-    word-break: break-word;
-    display: flex;
-    overflow: hidden;
+  flex-direction: column;
+  padding: 7% 25%;
+  word-break: break-word;
+  display: flex;
+  overflow: hidden;
+  text-align: center; /* Center the title */
+  min-height: 40rem;
 }
 
 #title h1 {
-  color: white; /* Add this line */
-  text-align: left;
-  white-space:nowrap ;
+  color: white;
+  white-space: nowrap; /* Prevent the text from wrapping */
 }
-
 
 #features {
   padding: 7% 15%;
-  background-color: #fff;
+  background-color: rgb(21, 21, 37);
   z-index: 1;
   position: relative;
 }
@@ -73,33 +73,26 @@ p {
   padding: 7% 15%;
   text-align: center;
 }
-#Navbar{
-background-color: rgb(21, 21, 37);
-padding-bottom: 0px;
-
+#Navbar {
+  background-color: rgb(21, 21, 37);
+  padding-bottom: 0px;
 }
-#Logo1{
-width: 5.5rem;
-height: auto;
-margin-left: 30%;
+#Logo1 {
+  width: 5.5rem;
+  height: auto;
+  margin-left: 30%;
 }
-#Headerd{
-color: white;
-
+#Headerd {
+  color: white;
 }
-#Blue_Card{margin-left: 12%;
-padding-top: 6%;
-width:800px
+#Blue_Card {
+  margin-top: 2rem; /* Adjust the top margin for spacing */
 }
 
 /**************************************************************Class******************************************************************/
 
-.col-lg-6{
-margin-left: 15rem;
-
-}
 .container-fluid {
-  padding: 3% 15% 7%;
+  padding: 3% 15% %;
 }
 .navbar-brand {
   font-family: Ubuntu;
@@ -125,8 +118,6 @@ margin-left: 15rem;
   transform: rotate(25deg);
   position: absolute;
   right: 27%;
-  
-    
 }
 .feature-box {
   text-align: center;
@@ -150,24 +141,46 @@ margin-left: 15rem;
 }
 .carousel-item {
   padding: 7% 15%;
+  font-size: 1.3rem;
+  font-weight: 500;
+  font-style: italic;
 }
-.pricing-col {
-  padding: 3% 2%;
+.carousel-indicators button {
+  background-color: #fff;
 }
 .header {
-  font-weight: bold;
+  font-size: 2rem;
 }
-.title {
-  font-size: 3rem;
-  font-weight: 400;
+.card-body {
+  padding: 7%;
 }
-.cta-hedding {
-  font-family: "Montserrat";
+.card-body .title {
+  color: black;
   font-size: 3rem;
-  margin: 5% 3% 5% 0;
+}
+.card-text {
+  font-size: .8rem;
+  text-align: center;
+}
+.card-body .card-text1 {
+  font-size: 1.3rem;
+}
+.footer {
+  background-color: white;
 }
 .soical-icon {
-  margin: 20px 10px;
+  padding: 5%;
+}
+.card.bg-primary {
+  background-color: rgba(0, 123, 255, 0.7) !important ;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Set a fixed height for the cards */
+  text-align: center;
 }
 
 /************************ media quary *******************/
@@ -179,6 +192,11 @@ margin-left: 15rem;
     position: static;
     transform: rotate(0);
     width: 30%;
+  }  
+
+
+  #title h1 {
+    white-space: normal; /* Allow text to wrap */
   }
 }
 
