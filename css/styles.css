@@ -1,0 +1,278 @@
+/**************************************************************selector***************************************************************/
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+h1 {
+  /* font-family: "Montserrat", sans-serif; */
+  font-size: 2.3rem;
+  line-height: 1.5;
+  font-weight: 200;
+  color: white;
+}
+h2 {
+  font-family: "Montserrat";
+  font-size: 3rem;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+h3 {
+  font-family: Montserrat;
+  font-weight: bold;
+  color: white;
+}
+p {
+  color: white;
+}
+
+/**************************************************************ID********************************************************************/
+
+#title {
+  background: linear-gradient(rgba(21, 21, 37, 0.68), rgba(21, 21, 37, 0.68)) repeat scroll 0% 0% / auto padding-box border-box, rgba(0, 0, 0, 0) url('https://images.unsplash.com/photo-1617839625591-e5a789593135?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MTUzNXwwfDF8c2VhcmNofDF8fFF1YW50dW0lMjBjb21wdXRpbmd8ZW58MHx8fHwxNzE3NzY0NzU5fDA&ixlib=rb-4.0.3&q=80&w=1080') no-repeat scroll 50% 50% / cover padding-box border-box;
+  flex-direction: column;
+  padding: 20% 25%;
+  word-break: break-word;
+  display: flex;
+  overflow: hidden;
+  text-align: center; /* Center the title */
+  min-height: 40rem;
+}
+
+#title h1 {
+  color: white;
+  white-space: nowrap; 
+  font-weight: 900;
+  padding-bottom: 4%;
+}
+
+#features {
+  background-color: rgb(21, 21, 37);
+  padding: 3% 25px;
+}
+
+#features h1 {
+  text-align: left; /* Align the title to the left */
+  margin-left: 20px;
+  font-weight: 900; /* Add margin to move the heading a bit from the left */
+}
+
+
+#features p {
+  font-family: Montserrat;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 1.4;
+}
+#schedule {
+  background-color: rgb(21, 21, 37); /* Same as features section */
+  color: white; /* White text */
+  padding: 50px 0; /* Ensure similar padding */
+}
+
+
+#faq h1,#schedule h1,#testimonials {
+  text-align: center;
+  background-color: #ffffff;
+  color: black;
+  font-weight: 900;
+}
+#press {
+  background-color: #ef8172;
+  text-align: center;
+  padding-bottom: 3%;
+}
+#pricing {
+  padding: 100px;
+  text-align: center;
+}
+#cta {
+  background-color: #ff4c68;
+  color: #fff;
+  padding: 7% 15%;
+  text-align: center;
+}
+#footer {
+  background-color: #fff;
+  padding: 7% 15%;
+  text-align: center;
+}
+#Navbar {
+  background-color: rgb(21, 21, 37);
+  padding-bottom: 0px;
+}
+#Logo1 {
+  width: 5.5rem;
+  height: auto;
+  margin-left: 30%;
+}
+#Headerd {
+  color: white;
+}
+#Blue_Card {
+  margin-top: 2rem; /* Adjust the top margin for spacing */
+}
+#faq {
+  background-color: rgb(21, 21, 37); /* Same background as features section */
+  color: white; /* White text */
+  padding: 50px 0; /* Ensure similar padding */
+}
+#faq h2, #faq p {
+  color: white; /* Ensure all text elements are white */
+  font-size: 100%;
+}
+#Apply {
+  background-color: rgb(21, 21, 37); /* Same background as features section */
+  color: white; /* White text */
+  padding: 50px 0; /* Ensure similar padding */
+}
+
+#Apply h2 {
+  color: white;
+}
+
+#Apply .btn {
+  color: white;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+#Apply .btn:hover {
+  background-color: #0056b3;
+  border-color: #004085;
+}
+
+/**************************************************************Class******************************************************************/
+
+.container-fluid {
+  padding: 3% 15% %;
+}
+.navbar-brand {
+  font-family: Ubuntu;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.navbar {
+  /* padding-bottom: .9rem; */
+  background-color:rgb(21, 21, 37);
+  font-weight: bold;
+}
+.nav-item {
+  padding: 0 18px;
+}
+.nav-link {
+  font-family: "Montserrat";
+  font-weight: 300;
+  font-size: 1.2rem;
+  color: white;!important
+}
+.Download-botton {
+  margin: 5% 3% 5% 0;
+}
+.image {
+  width: 17%;
+  transform: rotate(25deg);
+  position: absolute;
+  right: 27%;
+}
+.feature-box {
+  padding: 2% 0 0 ;
+  text-align: left; /* Keep the text alignment left */
+  margin: 0 auto; /* Center the feature-box */
+  max-width: 100rem;
+}
+.icon {
+  color: #ef8172;
+  margin-bottom: 20px;
+}
+.icon:hover {
+  color: #ff4c68;
+}
+.testimonial-image {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+.press-logo {
+  width: 15%;
+  margin: 50px 20px 50px;
+}
+.carousel-item {
+  padding: 7% 15%;
+  font-size: 1.3rem;
+  font-weight: 500;
+  font-style: italic;
+}
+.carousel-indicators button {
+  background-color: #fff;
+}
+.header {
+  font-size: 2rem;
+}
+.card-body {
+  padding: 7%;
+}
+.card-body .title {
+  color: black;
+  font-size: 3rem;
+}
+.card-text {
+  font-size: .8rem;
+  text-align: center;
+}
+.card-body .card-text1 {
+  font-size: 1.3rem;
+}
+.footer {
+  background-color: white;
+}
+.soical-icon {
+  padding: 5%;
+}
+.card.bg-primary {
+  background-color: rgba(0, 123, 255, 0.7) !important ;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Set a fixed height for the cards */
+  text-align: center;
+}
+.details {
+  border-left: 4px solid blue; /* Adjust the width and color as needed */
+  padding-left: 10px; /* Adjust the padding as needed */
+  height: auto;
+  /* Additional styling if necessary */
+  /* padding-top: 3%; */
+  margin-top: 6%;
+}
+
+/************************ media quary *******************/
+@media (max-width: 1028px) {
+  #title {
+    text-align: center;
+  }
+  .image {
+    position: static;
+    transform: rotate(0);
+    width: 30%;
+  }  
+  #title h1 {
+    white-space: normal; /* Allow text to wrap */
+    padding-top: 3rem;
+  }
+  
+}
+@media (max-width: 820px) and (min-height: 1180px) {
+  #Blue_Card {
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    flex-direction: column; /* Ensure vertical alignment of children */
+    margin: 2rem auto; /* Centering with margin */
+    max-width: 100%; /* Ensure card takes full width */
+    padding: 1rem; /* Add padding for spacing */
+  }
+}
