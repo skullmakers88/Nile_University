@@ -1,8 +1,4 @@
 /**************************************************************selector***************************************************************/
-
-
-
-
 body {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
@@ -255,6 +251,8 @@ p {
 }
 
 /************************ media quary *******************/
+/* Base Styles for Blue Cards */
+
 /* Media Queries */
 @media (max-width: 1028px) {
   #title {
@@ -268,41 +266,25 @@ p {
   #title h1 {
     white-space: normal;
     padding-top: 3rem;
+    font-size: 150%;
   }
   #Blue_Card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 2rem auto;
-    max-width: 90%; /* Adjust max-width for better responsiveness */
-    padding: 1rem;
+    width: 120%; /* Set a fixed width for smaller screens */
     font-size: 0.9rem; /* Reduce font size for smaller screens */
+
   }
 }
 
 @media (max-width: 820px) {
   #Blue_Card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 2rem auto;
-    max-width: 90%; /* Adjust max-width for better responsiveness */
-    padding: 1rem;
+    width: 120%; /* Set a fixed width for smaller screens */
     font-size: 0.8rem; /* Further reduce font size for smaller screens */
   }
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 560px) { /* Adjust this to match the device width more precisely */
   #Blue_Card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 2rem auto;
-    max-width: 90%; /* Adjust max-width for better responsiveness */
-    padding: 1rem;
-    font-size: 0.85rem; /* Adjust font size accordingly */
+    width: 120%; /* Set a fixed width for very small screens */
+    font-size: 0.7rem; /* Further reduce font size for very small screens */
   }
 }
