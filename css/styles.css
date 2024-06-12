@@ -35,7 +35,7 @@ html,body{
   /* First background: Linear gradient */
   background: linear-gradient(rgba(21, 21, 37, 0.68), rgba(21, 21, 37, 0.68)),
   /* Second background: Image */
-  url('C:/Users/Youssef/Desktop/Nile_University/images/stanford.jpg');
+  url('images\stanford.jpg');
 
   /* Background settings for both layers */
   background-repeat: no-repeat;
