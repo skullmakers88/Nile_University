@@ -33,7 +33,7 @@ html,body{
 
 #title {
   /* First background: Linear gradient */
-  background: linear-gradient(rgba(21, 21, 37, 0.68), rgba(21, 21, 37, 0.68)),
+  background: linear-gradient(rgba(21, 21, 37, 0.68), rgba(21, 21, 37,1.68)),
   /* Second background: Image */
   url('https://github.com/skullmakers88/img/blob/main/stanford.jpg?raw=true');
 
@@ -47,8 +47,8 @@ html,body{
   flex-direction: column;
   
   /* Padding properties */
-  padding-top: 20%;
-  padding-bottom: 20%;
+  padding-top: 10%;
+  padding-bottom: 6%;
 }
 
 #title h1 {
@@ -69,18 +69,7 @@ html,body{
   font-weight: 900; /* Add margin to move the heading a bit */
 }
 
-/* Media query for mobile devices */
-@media (max-width: 768px) {
-  #Blue_Card .col-lg-4 {
-    max-width: 100%;
-    margin-bottom: 20px; /* Add space between cards */
-  }
 
-  #Blue_Card {
-    flex-direction: column;
-    align-items: center; /* Center cards horizontally */
-  }
-}
 
 
 #features p {
@@ -90,51 +79,92 @@ html,body{
   line-height: 1.4;
 }
 #schedule {
-  background-color: white;
-  color: rgb(21, 21, 37);
-  padding: 50px 0;
-  text-align: center; /* Ensure the heading is centered */
+  /* padding: 20px; */
+  background-color: #f9f9f9;
+
 }
-/* sCHEDUALLLLLLLLLLLLLLL */
-.table-container {
-  display: flex;
-  justify-content: center; /* Center the table horizontally */
-  align-items: center; /* Center the table vertically */
-  height: 100vh; /* Full height of the viewport */
+.center{
+
+  margin-left: auto;
+  margin-right: auto;
+
+
+}
+#schedule h2 {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-.schedule-table {
+.day {
+  margin-bottom: 40px;
+  width: 100%;
+  /* display: flex; */
+  text-align: left;
+}
+
+.day h3 {
+  margin-bottom: 20px;
+  text-align: left;
+  padding-left: 40px;
+}
+
+table {
+  width: 90%; /* Adjust as needed to fit your design */
+  max-width: 800px; /* Limit the maximum width */
   border-collapse: collapse;
-  width: 80%; /* Adjust width as needed */
-  max-width: 800px;
-  text-align: left; /* Align text to the left inside the table */
-  margin:auto;
-    border-collapse: collapse;
-    width: 600px; /* Fixed width */
-    margin: 20px auto; /* Center the table */
-  }
-  
+}
 
-.schedule-table th, .schedule-table td {
+th, td {
   border: 1px solid #ddd;
   padding: 8px;
+  text-align: left;
 }
 
-.schedule-table th {
-  background-color: rgb(21, 21, 37);
+th {
+  background-color:rgb(21, 21, 37);
   color: white;
-  font-weight: bold;
 }
 
-.schedule-table tr:nth-child(even) {
-  background-color: #f2f2f2;
+@media (max-width: 768px) {
+  table, th, td {
+    display: block;
+  }
+  
+  th, td {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  th {
+    display: none;
+  }
+
+  td {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 5px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  td:before {
+    content: attr(data-label);
+    flex: 1;
+    font-weight: bold;
+    margin-right: 30px; /* Add space between pseudo-element and content */
+  }
 }
 
-.schedule-table tr:hover {
-  background-color: #ddd;
+td[data-label="Time"]::before {
+  content: "Time";
 }
 
-#faq h1,#schedule h1,#testimonials {
+td[data-label="Activity"]::before {
+  content: "Activity";
+}
+
+
+#faq h1,#schedule h1,#testimonials,#schedule h2 {
   text-align: center;
   background-color:  rgb(21, 21, 37);
   color: white;
@@ -155,17 +185,13 @@ html,body{
   padding: 7% 15%;
   text-align: center;
 }
-#footer {
-  background-color: #fff;
-  padding: 7% 15%;
-  text-align: center;
-}
+
 #Navbar {
   background-color: rgb(21, 21, 37);
   padding-bottom: 0px;
 }
 #Logo1 {
-  width: 5.5rem;
+  width: 12.5rem;
   height: auto;
   margin-left: 30%;
 }
@@ -178,13 +204,13 @@ html,body{
 #faq {
   background-color: white; /* Same background as features section */
   color:  rgb(21, 21, 37); /* White text */
-  padding: 50px 0; /* Ensure similar padding */
-  padding-top: 25%; /* Add padding to the top of the FAQ section */
+  padding: 5px 0; /* Ensure similar padding */
+  padding-top: 1%; /* Add padding to the top of the FAQ section */
   background-color: white; 
 }
 #faq h2, #faq p {
   color: rgb(21, 21, 37) ; /* Ensure all text elements are white */
-  font-size: 100%;
+  font-size: 150%;
 }
 #Apply {
   background-color: rgb(21, 21, 37); /* Same background as features section */
@@ -207,34 +233,36 @@ html,body{
   border-color: #004085;
 }
 #footer {
-  background-color: #212529;
+  background-color: rgb(21, 21, 37);
   padding: 20px 0;
+  color: white;
+}
+#footer h2{
+font-size: 100%;
+margin-left: 10%;
+margin: 0;
 }
 
-#FooterLogo {
-  width: 150px; /* Adjust the width as needed */
+
+#footer p {
+  color: white;
+  font-size: 14px;
+  margin-top: 5px ; 
+
 }
 
-#footer a {
-  color: #ffffff;
-  margin: 0 10px;
-  text-decoration: none;
-}
 
-#footer a:hover {
-  color: #cccccc;
-}
+#Logo2{
+    width: 5.5rem;
+    height: auto;
+    
+  }
 
-#footer i {
-  margin: 0 15px;
-}
 
 
 /**************************************************************Class******************************************************************/
 
-.container-fluid {
-  
-}
+
 .navbar-brand {
   font-family: Ubuntu;
   font-size: 2.5rem;
@@ -244,6 +272,7 @@ html,body{
   /* padding-bottom: .9rem; */
   background-color:white;
   font-weight: bold;
+  
 }
 .nav-item {
   padding: 0 18px;
@@ -256,8 +285,8 @@ html,body{
   color: rgb(21, 21, 37);!important
   
 }
-.Download-botton {
-  margin: 5% 3% 5% 0;
+.nav-link:hover {
+  color: rgb(32, 138, 203) !important;
 }
 .image {
   width: 17%;
@@ -317,7 +346,7 @@ html,body{
 
 .card-header{
 font-weight: bold;
-font-size: 1.2rem;
+font-size: 1.6rem;
 border-bottom: 0px;
 
 }
@@ -326,9 +355,7 @@ border-bottom: 0px;
 .card-body .card-text1 {
   font-size: 1.3rem;
 }
-.footer {
-  background-color: white;
-}
+
 .soical-icon {
   padding: 5%;
 }
@@ -354,12 +381,7 @@ border-bottom: 0px;
   margin-left: 2%;
 }
 .col-lg-4{
-
 width: 27.333333%;
-
-
-
-
 }
 
 /************************ media quary *******************/
@@ -368,7 +390,6 @@ width: 27.333333%;
     max-width: 200%;
 
   }
-
   #Blue_Card {
     flex-direction: column;
     align-items: center; /*Center cards horizontally */
@@ -377,12 +398,40 @@ width: 27.333333%;
   .card{
 
 width: 287%;
-
     
   }
   #title h1{
 
     padding-top: 20%;
     font-size: 1.5rem ;
+  }
+  #faq {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Center text inside the content */
+  }
+  #features p,h1 {
+
+    font-size: 115%;!important
+    
+
+
+  }
+ 
+}
+
+
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  #Blue_Card .col-lg-4 {
+    max-width: 100%;
+    margin-bottom: 20px; /* Add space between cards */
+  }
+
+  #Blue_Card {
+    flex-direction: column;
+    align-items: center; /* Center cards horizontally */
   }
 }
