@@ -1,6 +1,6 @@
 /**************************************************************selector***************************************************************/
 body {
-  font-family: "Montserrat", sans-serif;
+  /* font-family: "Montserrat", sans-serif; */
   font-weight: 400;
   overflow-x: hidden;
 }
@@ -9,22 +9,21 @@ h1 {
   font-size: 2.3rem;
   line-height: 1.5;
   font-weight: 200;
-  color: white;
+  color:  rgb(21, 21, 37);
 }
 h2 {
-  font-family: "Montserrat";
-  font-size: 3rem;
+  /* font-family: "Montserrat"; */
   line-height: 1.5;
   font-weight: bold;
 }
 
 h3 {
-  font-family: Montserrat;
+  /* font-family: Montserrat; */
   font-weight: bold;
-  color: white;
+  color:  rgb(21, 21, 37);
 }
 p {
-  color: white;
+  color:  rgb(21, 21, 37);
 }
 html,body{
   overflow-x: hidden;
@@ -33,14 +32,23 @@ html,body{
 /**************************************************************ID********************************************************************/
 
 #title {
-  background: linear-gradient(rgba(21, 21, 37, 0.68), rgba(21, 21, 37, 0.68)) repeat scroll 0% 0% / auto padding-box border-box, rgba(0, 0, 0, 0) url('https://images.unsplash.com/photo-1617839625591-e5a789593135?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MTUzNXwwfDF8c2VhcmNofDF8fFF1YW50dW0lMjBjb21wdXRpbmd8ZW58MHx8fHwxNzE3NzY0NzU5fDA&ixlib=rb-4.0.3&q=80&w=1080') no-repeat scroll 50% 50% / cover padding-box border-box;
+  /* First background: Linear gradient */
+  background: linear-gradient(rgba(21, 21, 37, 0.68), rgba(21, 21, 37, 0.68)),
+  /* Second background: Image */
+  url('C:/Users/Youssef/Desktop/Nile_University/images/stanford.jpg');
+
+  /* Background settings for both layers */
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+
+  /* Layout properties */
+  display: flex; /* Flex container */
   flex-direction: column;
-  padding: 20% 25%;
-  word-break: break-word;
-  display: flex;
-  overflow: hidden;
-  text-align: center; /* Center the title */
-  min-height: 40rem;
+  
+  /* Padding properties */
+  padding-top: 20%;
+  padding-bottom: 20%;
 }
 
 #title h1 {
@@ -51,14 +59,27 @@ html,body{
 }
 
 #features {
-  background-color: rgb(21, 21, 37);
+  background-color: white;
   padding: 3% 25px;
 }
 
 #features h1 {
   text-align: left; /* Align the title to the left */
   margin-left: 20px;
-  font-weight: 900; /* Add margin to move the heading a bit from the left */
+  font-weight: 900; /* Add margin to move the heading a bit */
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  #Blue_Card .col-lg-4 {
+    max-width: 100%;
+    margin-bottom: 20px; /* Add space between cards */
+  }
+
+  #Blue_Card {
+    flex-direction: column;
+    align-items: center; /* Center cards horizontally */
+  }
 }
 
 
@@ -69,14 +90,54 @@ html,body{
   line-height: 1.4;
 }
 #schedule {
-  background-color: rgb(21, 21, 37); /* Same as features section */
-  color: white; /* White text */
-  padding: 50px 0; /* Ensure similar padding */
+  background-color: white;
+  color: rgb(21, 21, 37);
+  padding: 50px 0;
+  text-align: center; /* Ensure the heading is centered */
 }
+/* sCHEDUALLLLLLLLLLLLLLL */
+.table-container {
+  display: flex;
+  justify-content: center; /* Center the table horizontally */
+  align-items: center; /* Center the table vertically */
+  height: 100vh; /* Full height of the viewport */
+}
+
+.schedule-table {
+  border-collapse: collapse;
+  width: 80%; /* Adjust width as needed */
+  max-width: 800px;
+  text-align: left; /* Align text to the left inside the table */
+  margin:auto;
+    border-collapse: collapse;
+    width: 600px; /* Fixed width */
+    margin: 20px auto; /* Center the table */
+  }
+  
+
+.schedule-table th, .schedule-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.schedule-table th {
+  background-color: rgb(21, 21, 37);
+  color: white;
+  font-weight: bold;
+}
+
+.schedule-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.schedule-table tr:hover {
+  background-color: #ddd;
+}
+
 #faq h1,#schedule h1,#testimonials {
   text-align: center;
-  background-color: #ffffff;
-  color: black;
+  background-color:  rgb(21, 21, 37);
+  color: white;
   font-weight: 900;
 }
 #press {
@@ -112,15 +173,17 @@ html,body{
   color: white;
 }
 #Blue_Card {
-  margin-top: 2rem; /* Adjust the top margin for spacing */
+  margin: 2rem auto;
 }
 #faq {
-  background-color: rgb(21, 21, 37); /* Same background as features section */
-  color: white; /* White text */
+  background-color: white; /* Same background as features section */
+  color:  rgb(21, 21, 37); /* White text */
   padding: 50px 0; /* Ensure similar padding */
+  padding-top: 25%; /* Add padding to the top of the FAQ section */
+  background-color: white; 
 }
 #faq h2, #faq p {
-  color: white; /* Ensure all text elements are white */
+  color: rgb(21, 21, 37) ; /* Ensure all text elements are white */
   font-size: 100%;
 }
 #Apply {
@@ -143,11 +206,34 @@ html,body{
   background-color: #0056b3;
   border-color: #004085;
 }
+#footer {
+  background-color: #212529;
+  padding: 20px 0;
+}
+
+#FooterLogo {
+  width: 150px; /* Adjust the width as needed */
+}
+
+#footer a {
+  color: #ffffff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+#footer a:hover {
+  color: #cccccc;
+}
+
+#footer i {
+  margin: 0 15px;
+}
+
 
 /**************************************************************Class******************************************************************/
 
 .container-fluid {
-  padding: 3% 15% %;
+  
 }
 .navbar-brand {
   font-family: Ubuntu;
@@ -156,7 +242,7 @@ html,body{
 }
 .navbar {
   /* padding-bottom: .9rem; */
-  background-color:rgb(21, 21, 37);
+  background-color:white;
   font-weight: bold;
 }
 .nav-item {
@@ -164,9 +250,11 @@ html,body{
 }
 .nav-link {
   font-family: "Montserrat";
-  font-weight: 300;
+
+  font-weight: 500;
   font-size: 1.2rem;
-  color: white;!important
+  color: rgb(21, 21, 37);!important
+  
 }
 .Download-botton {
   margin: 5% 3% 5% 0;
@@ -213,15 +301,28 @@ html,body{
 }
 .card-body {
   padding: 7%;
+
 }
 .card-body .title {
   color: black;
   font-size: 3rem;
 }
 .card-text {
-  font-size: .8rem;
+  font-size: 1.1rem;
   text-align: center;
+  color: white;
+
+
 }
+
+.card-header{
+font-weight: bold;
+font-size: 1.2rem;
+border-bottom: 0px;
+
+}
+
+
 .card-body .card-text1 {
   font-size: 1.3rem;
 }
@@ -232,7 +333,7 @@ html,body{
   padding: 5%;
 }
 .card.bg-primary {
-  background-color: rgba(0, 123, 255, 0.7) !important ;
+  background-color: #2397eab3 !important ;
 }
 .card {
   display: flex;
@@ -241,6 +342,7 @@ html,body{
   align-items: center;
   height: 100%; /* Set a fixed height for the cards */
   text-align: center;
+  width: 200%;
 }
 .details {
   border-left: 4px solid blue; /* Adjust the width and color as needed */
@@ -249,79 +351,38 @@ html,body{
   /* Additional styling if necessary */
   /* padding-top: 3%; */
   margin-top: 6%;
+  margin-left: 2%;
 }
+.col-lg-4{
 
-/************************ media quary *******************/
-/* Base Styles for Blue Cards */
-
-/* Media Queries */
-@media (max-width: 1028px) {
-  #schedule,h2{
-
-    font-size: 100%;
-    }
-  #title {
-    text-align: center;
-  }
-  .image {
-    position: static;
-    transform: rotate(0);
-    width: 30%;
-  }  
-  #title h1 {
-    white-space: normal;
-    padding-top: 3rem;
-    font-size: 150%;
-  }
-  #Blue_Card {
-    width: 120%; /* Set a fixed width for smaller screens */
-    font-size: 0.9rem; /* Reduce font size for smaller screens */
-
-  }
-  html,body{
-
-    overflow-x: hidden;
+width: 27.333333%;
 
 
-
-  }
-  
 
 
 }
 
-@media (max-width: 820px) {
-  #schedule,h2{
+/************************ media quary *******************/
+@media (max-width: 768px) {
+  #Blue_Card .col-lg-4 {
+    max-width: 200%;
 
-    font-size: 100%;
-    }
+  }
+
   #Blue_Card {
-    width: 120%; /* Set a fixed width for smaller screens */
-    font-size: 0.8rem; /* Further reduce font size for smaller screens */
+    flex-direction: column;
+    align-items: center; /*Center cards horizontally */
+      margin: 2rem -25rem;
   }
-  html,body{
+  .card{
 
-    overflow-x: hidden;
+width: 287%;
 
-
-
+    
   }
-}
+  #title h1{
 
-@media (max-width: 560px) {
-  #schedule,h2{
-
-    font-size: 100%;
-    } /* Adjust this to match the device width more precisely */
-  #Blue_Card {
-    width: 120%; /* Set a fixed width for very small screens */
-    font-size: 0.7rem; /* Further reduce font size for very small screens */
-  }
-  html,body{
-
-    overflow-x: hidden;
-
-
-
+    padding-top: 20%;
+    font-size: 1.5rem ;
   }
 }
