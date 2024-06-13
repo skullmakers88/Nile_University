@@ -350,7 +350,7 @@ width: 27.333333%;
   #features p{
 
     font-family:'Times New Roman', Times, serif ;
-    font-size: 81%!important;
+    font-size: 70%!important;
 
 
 
@@ -369,7 +369,7 @@ width: 27.333333%;
 
   #faq h2, #faq p {
     color: rgb(21, 21, 37) ; /* Ensure all text elements are white */
-    font-size: 84%;
+    font-size: 75%;
     display: flex;
     flex-direction: column;
     padding: 0px 4%;
