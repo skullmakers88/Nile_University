@@ -124,6 +124,7 @@ th, td {
 th {
   background-color:rgb(21, 21, 37);
   color: white;
+  padding-right: 143px;
 }
 tr{
 
@@ -134,43 +135,39 @@ text-align: left;
 }
 
 @media (max-width: 768px) {
-  table, th, td {
-    display: block;
+    .Day2{
+      width: 21%;
+
+
+    }
+    table {
+      width: 100%;
+      max-width: 800px;
+      border-collapse: collapse;
   }
+    table, th, td {
+      /* display: block; */
+    }
   
-  th, td {
-    width: 100%;
-    box-sizing: border-box;
-  }
-
-  th {
-    display: none;
-  }
-
-  td {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 5px;
-    border: none;
-    border-bottom: 1px solid #ddd;
-    flex-direction: column;
-  }
+    th {
+      display:revert-layer;
+      padding-right: 0px;
+    }
   
-  td:before {
-    content: attr(data-label);
-    flex: 1;
-    font-weight: bold;
-    margin-right: 40px; /* Add space between pseudo-element and content */
+    td {
+      width: 21%;
+      box-sizing: border-box;
+      padding: 10px;
+      text-align: left;
+    }
+  
+    td:before {
+      content: attr(data-label);
+      font-weight: bold;
+      display: block;
+      margin-bottom: 5px;
+    }
   }
-}
-
-td[data-label=""]::before {
-  content: "";
-}
-
-td[data-label=""]::before {
-  content: "";
-}
 
 
 #faq h1,#schedule h1,#testimonials,#schedule h2 {
@@ -237,6 +234,7 @@ margin: 0;
 
 
 }
+
 
 /**************************************************************Class******************************************************************/
 
@@ -400,7 +398,7 @@ width: 27.333333%;
   #Blue_Card {
     flex-direction: column;
     align-items: center; /*Center cards horizontally */
-      margin: 2rem -27rem;
+      margin: 1rem -27rem;
   }
   .card{
 
@@ -408,9 +406,11 @@ width: 287%;
     
   }
   #title h1{
-
     padding-top: 30%;
     font-size: 1.5rem ;
+    padding-bottom: 0px;
+    
+    
   }
   
   #features p {
@@ -430,5 +430,6 @@ width: 287%;
   #Blue_Card {
     flex-direction: column;
     align-items: center; /* Center cards horizontally */
+    padding-left: 9px;
   }
 }
