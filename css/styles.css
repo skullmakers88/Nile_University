@@ -75,7 +75,7 @@ html,body{
 #features p {
   font-family: Montserrat;
   font-weight: 300;
-  font-size: 24px;
+  font-size: 23px;
   line-height: 1.4;
   text-align: justify;
 }
@@ -351,20 +351,18 @@ width: 27.333333%;
 
     font-family:'Times New Roman', Times, serif ;
 
-
-
-
   }
 
   #faq h2, #faq p {
-    color: rgb(21, 21, 37) ; /* Ensure all text elements are white */
-    font-size: 120%;
+    color: rgb(21, 21, 37);
+    font-size: 96%;
     display: flex;
     flex-direction: column;
     padding: 0px 4%;
-    text-align: justify; 
+    text-align: justify;
     letter-spacing: normal;
     font-family: 'Times New Roman', Times, serif;
+    }
     
 
 
