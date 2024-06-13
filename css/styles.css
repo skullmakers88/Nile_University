@@ -350,12 +350,12 @@ width: 27.333333%;
   #features p{
 
     font-family:'Times New Roman', Times, serif ;
-    font-size: 91%;
+    font-size: 83%!important;
 
   }
   #features h1{
 
-    font-size: 140%;
+    font-size: 124%;
 
   }
 
