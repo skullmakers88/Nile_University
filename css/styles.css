@@ -151,7 +151,7 @@ th {
     content: attr(data-label);
     flex: 1;
     font-weight: bold;
-    margin-right: 30px; /* Add space between pseudo-element and content */
+    margin-right: 40px; /* Add space between pseudo-element and content */
   }
 }
 
@@ -169,27 +169,9 @@ td[data-label="Activity"]::before {
   background-color:  rgb(21, 21, 37);
   color: white;
   font-weight: 900;
-}
-#press {
-  background-color: #ef8172;
-  text-align: center;
-  padding-bottom: 3%;
-}
-#pricing {
-  padding: 100px;
-  text-align: center;
-}
-#cta {
-  background-color: #ff4c68;
-  color: #fff;
-  padding: 7% 15%;
-  text-align: center;
+  margin-bottom: 5%;
 }
 
-#Navbar {
-  background-color: rgb(21, 21, 37);
-  padding-bottom: 0px;
-}
 #Logo1 {
   width: 12.5rem;
   height: auto;
@@ -211,26 +193,6 @@ td[data-label="Activity"]::before {
 #faq h2, #faq p {
   color: rgb(21, 21, 37) ; /* Ensure all text elements are white */
   font-size: 150%;
-}
-#Apply {
-  background-color: rgb(21, 21, 37); /* Same background as features section */
-  color: white; /* White text */
-  padding: 50px 0; /* Ensure similar padding */
-}
-
-#Apply h2 {
-  color: white;
-}
-
-#Apply .btn {
-  color: white;
-  background-color: #007bff;
-  border-color: #007bff;
-}
-
-#Apply .btn:hover {
-  background-color: #0056b3;
-  border-color: #004085;
 }
 #footer {
   background-color: rgb(21, 21, 37);
@@ -258,7 +220,13 @@ margin: 0;
     
   }
 
+#BUtt{
 
+
+  margin-bottom: 4%;
+
+
+}
 
 /**************************************************************Class******************************************************************/
 
@@ -300,31 +268,13 @@ margin: 0;
   margin: 0 auto; /* Center the feature-box */
   max-width: 100rem;
 }
-.icon {
-  color: #ef8172;
-  margin-bottom: 20px;
-}
-.icon:hover {
-  color: #ff4c68;
-}
-.testimonial-image {
-  width: 10%;
-  border-radius: 100%;
-  margin: 20px;
-}
+
+
 .press-logo {
   width: 15%;
   margin: 50px 20px 50px;
 }
-.carousel-item {
-  padding: 7% 15%;
-  font-size: 1.3rem;
-  font-weight: 500;
-  font-style: italic;
-}
-.carousel-indicators button {
-  background-color: #fff;
-}
+
 .header {
   font-size: 2rem;
 }
@@ -386,6 +336,28 @@ width: 27.333333%;
 
 /************************ media quary *******************/
 @media (max-width: 768px) {
+  #faq h2, #faq p {
+    color: rgb(21, 21, 37) ; /* Ensure all text elements are white */
+    font-size: 120%;
+    display: flex;
+    flex-direction: column;
+    align-items: ;
+    text-align: center; 
+    
+
+
+
+  }
+  #schedule h1{
+    margin-bottom: 7%;
+  }
+  #BUtt{
+
+
+    margin-bottom: 10%;
+  
+  
+  }
   #Blue_Card .col-lg-4 {
     max-width: 200%;
 
@@ -402,27 +374,17 @@ width: 287%;
   }
   #title h1{
 
-    padding-top: 20%;
+    padding-top: 30%;
     font-size: 1.5rem ;
   }
-  #faq {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center; /* Center text inside the content */
-  }
-  #features p,h1 {
+  
+  #features p {
 
-    font-size: 115%;!important
-    
-
+    font-size: 106%;!important
 
   }
  
 }
-
-
-
 /* Media query for mobile devices */
 @media (max-width: 768px) {
   #Blue_Card .col-lg-4 {
