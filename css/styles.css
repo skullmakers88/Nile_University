@@ -77,6 +77,7 @@ html,body{
   font-weight: 300;
   font-size: 24px;
   line-height: 1.4;
+  text-align: justify;
 }
 #schedule {
   /* padding: 20px; */
@@ -124,6 +125,13 @@ th {
   background-color:rgb(21, 21, 37);
   color: white;
 }
+tr{
+
+text-align: left;
+
+
+  
+}
 
 @media (max-width: 768px) {
   table, th, td {
@@ -145,6 +153,7 @@ th {
     padding: 10px 5px;
     border: none;
     border-bottom: 1px solid #ddd;
+    flex-direction: column;
   }
   
   td:before {
@@ -155,12 +164,12 @@ th {
   }
 }
 
-td[data-label="Time"]::before {
-  content: "Time";
+td[data-label=""]::before {
+  content: "";
 }
 
-td[data-label="Activity"]::before {
-  content: "Activity";
+td[data-label=""]::before {
+  content: "";
 }
 
 
@@ -193,6 +202,7 @@ td[data-label="Activity"]::before {
 #faq h2, #faq p {
   color: rgb(21, 21, 37) ; /* Ensure all text elements are white */
   font-size: 150%;
+  text-align: justify;
 }
 #footer {
   background-color: rgb(21, 21, 37);
@@ -336,13 +346,25 @@ width: 27.333333%;
 
 /************************ media quary *******************/
 @media (max-width: 768px) {
+
+  #features p{
+
+    font-family:'Times New Roman', Times, serif ;
+
+
+
+
+  }
+
   #faq h2, #faq p {
     color: rgb(21, 21, 37) ; /* Ensure all text elements are white */
     font-size: 120%;
     display: flex;
     flex-direction: column;
-    align-items: ;
-    text-align: center; 
+    padding: 0px 4%;
+    text-align: justify; 
+    letter-spacing: normal;
+    font-family: 'Times New Roman', Times, serif;
     
 
 
@@ -365,7 +387,7 @@ width: 27.333333%;
   #Blue_Card {
     flex-direction: column;
     align-items: center; /*Center cards horizontally */
-      margin: 2rem -25rem;
+      margin: 2rem -27rem;
   }
   .card{
 
